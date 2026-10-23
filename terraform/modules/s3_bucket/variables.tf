@@ -5,11 +5,11 @@ variable "bucket_name" {
 
 variable "force_destroy" {
   description = "Allow terraform destroy to delete"
-  type = bool
-  default = true
+  type        = bool
+  default     = true
 }
 
 variable "tags" {
-  type = map(string)
+  type    = map(string)
   default = {}
 }

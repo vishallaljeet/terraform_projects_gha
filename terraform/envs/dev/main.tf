@@ -24,14 +24,14 @@ locals {
 }
 
 provider "aws" {
-    region = var.region
+  region = var.region
 }
 
 
 module "app_bucket" {
   source = "../../modules/s3_bucket"
-  
-  bucket_name = "${var.bucket_prefix}-${var.env}" 
-  force_destroy = true  
-  tags = local.tags
+
+  bucket_name   = "${var.bucket_prefix}-${var.env}"
+  force_destroy = true
+  tags          = local.tags
 }

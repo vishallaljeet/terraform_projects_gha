@@ -29,7 +29,12 @@ on:
 
 env:
   TF_IN_AUTOMATION: true
-  AWS_REGION: af-south-1
+  AWS_REGION: us-east-1
+  
+permissions:
+    id-token: write
+    contents: read
+    pull-requests: write
 
 jobs:
   setup:

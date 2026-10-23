@@ -1,0 +1,29 @@
+# Provider plugins and module downloads
+.terraform/
+.terraform.tfstate.lock.info
+
+# State files
+*.tfstate
+*.tfstate.*
+
+# Saved plan files
+tfplan
+*.tfplan
+
+# Variable files that may hold secrets
+*.auto.tfvars
+secret.tfvars
+
+# Crash logs
+crash.log
+crash.*.log
+
+# Local override files
+override.tf
+override.tf.json
+*_override.tf
+*_override.tf.json
+
+# CLI config
+.terraformrc
+terraform.rc
